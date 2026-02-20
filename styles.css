@@ -100,6 +100,11 @@ p {
   color: #fff;
 }
 
+.hero-cta .btn-solid {
+  background: var(--text);
+  color: #fff;
+}
+
 .btn-outline {
   border-color: var(--primary);
   color: var(--primary);
@@ -214,15 +219,54 @@ p {
 .hero-image-wrap {
   border-radius: 1.6rem;
   overflow: hidden;
-  background: #c8dae8;
+  background:
+    radial-gradient(circle at 20% 20%, #eef4ff 0%, transparent 40%),
+    radial-gradient(circle at 80% 85%, #dde9f7 0%, transparent 45%),
+    linear-gradient(140deg, #e8eff7, #dbe4f0);
   min-height: 21.5rem;
   border: 1px solid #c1d2df;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
 }
 
 .hero-image-wrap img {
-  width: 100%;
+  width: 92%;
   height: 100%;
   object-fit: cover;
+  object-position: center 20%;
+}
+
+.hero-cutout {
+  mix-blend-mode: lighten;
+  filter: saturate(1.04) contrast(1.04);
+}
+
+.hero-badge {
+  position: absolute;
+  top: 1rem;
+  right: -0.7rem;
+  background: #fff;
+  border: 1px solid #d6e1eb;
+  border-radius: 0.7rem;
+  box-shadow: 0 12px 24px rgba(36, 45, 70, 0.12);
+  padding: 0.6rem 0.7rem;
+  width: 10.8rem;
+  z-index: 2;
+}
+
+.hero-badge strong {
+  display: block;
+  font-size: 1.35rem;
+  line-height: 1;
+  margin-bottom: 0.25rem;
+}
+
+.hero-badge span {
+  display: block;
+  font-size: 0.72rem;
+  line-height: 1.35;
+  color: var(--muted);
 }
 
 .spark {
@@ -620,6 +664,12 @@ textarea {
 
   .hero-image-wrap {
     min-height: 18rem;
+  }
+
+  .hero-badge {
+    right: 0.3rem;
+    top: 0.6rem;
+    width: 9.6rem;
   }
 
   .footer-top {
