@@ -181,13 +181,21 @@ p {
 }
 
 .hero-copy h1 {
-  font-size: clamp(1.95rem, 4.4vw, 3.9rem);
-  line-height: 1.08;
-  max-width: 12ch;
+  font-size: clamp(1.75rem, 3.7vw, 3.25rem);
+  line-height: 1.1;
+  max-width: 14.5ch;
 }
 
 .hero-highlight {
   color: var(--primary);
+}
+
+.hero-line {
+  display: block;
+}
+
+.hero-line-nowrap {
+  white-space: nowrap;
 }
 
 .lede {
