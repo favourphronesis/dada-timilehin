@@ -176,12 +176,8 @@ p {
   align-items: center;
 }
 
-.hero-copy h1 span {
-  color: var(--primary);
-}
-
 .hero-copy h1 {
-  font-size: clamp(1.75rem, 3.7vw, 3.25rem);
+  font-size: clamp(1.9rem, 4vw, 3.45rem);
   line-height: 1.1;
   max-width: 14.5ch;
 }
