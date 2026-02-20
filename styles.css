@@ -110,6 +110,17 @@ p {
   color: var(--primary);
 }
 
+.btn-ghost {
+  background: transparent;
+  color: var(--text);
+  border: 1px solid #b6c4d4;
+}
+
+.btn-ghost:hover {
+  border-color: #8ea2b9;
+  background: rgba(255, 255, 255, 0.42);
+}
+
 .btn-accent {
   background: var(--accent);
   color: #fff;
@@ -207,6 +218,10 @@ p {
 
 .hero-cta {
   margin-top: 2rem;
+  display: flex;
+  gap: 0.85rem;
+  align-items: center;
+  flex-wrap: wrap;
 }
 
 .hero-visual {
