@@ -180,6 +180,16 @@ p {
   color: var(--primary);
 }
 
+.hero-copy h1 {
+  font-size: clamp(1.95rem, 4.4vw, 3.9rem);
+  line-height: 1.08;
+  max-width: 12ch;
+}
+
+.hero-highlight {
+  color: var(--primary);
+}
+
 .lede {
   color: var(--muted);
   font-size: 1.14rem;
