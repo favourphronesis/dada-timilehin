@@ -477,9 +477,9 @@ p {
 }
 
 .why-do-body {
-  background: #f8fbff;
-  border: 1px solid #cdd7e4;
-  border-radius: 0.9rem;
+  background: transparent;
+  border: 0;
+  border-radius: 0;
   padding: 1.55rem;
   margin-top: 0;
 }
