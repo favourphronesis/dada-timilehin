@@ -290,30 +290,6 @@ p {
   background: #f3f7fb;
 }
 
-.process-divider {
-  overflow: hidden;
-  background: linear-gradient(100deg, #1e2540, #3b2fb2);
-  color: #eef2ff;
-  border-top: 1px solid #4150a3;
-  border-bottom: 1px solid #4150a3;
-}
-
-.process-track {
-  display: flex;
-  width: max-content;
-  animation: ticker 24s linear infinite;
-  white-space: nowrap;
-  font-weight: 700;
-  letter-spacing: 0.04em;
-  text-transform: uppercase;
-  font-size: 0.82rem;
-  padding: 0.58rem 0;
-}
-
-.process-track span {
-  margin-right: 2.5rem;
-}
-
 .why-do {
   background:
     radial-gradient(circle at 80% 20%, #e4e2ff 0%, transparent 45%),
@@ -642,10 +618,6 @@ textarea {
     padding: 3.5rem 0;
   }
 
-  .process-track {
-    animation-duration: 18s;
-  }
-
   .hero-image-wrap {
     min-height: 18rem;
   }
@@ -653,14 +625,5 @@ textarea {
   .footer-top {
     flex-direction: column;
     align-items: flex-start;
-  }
-}
-
-@keyframes ticker {
-  from {
-    transform: translateX(0);
-  }
-  to {
-    transform: translateX(-50%);
   }
 }
