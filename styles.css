@@ -595,13 +595,6 @@ p {
   line-height: 1.35;
 }
 
-.project-stat:nth-child(3) {
-  grid-column: 1 / -1;
-  justify-self: start;
-  text-align: left;
-  max-width: none;
-}
-
 .project-accent {
   height: 0.48rem;
   width: 100%;
