@@ -276,6 +276,33 @@ p {
   color: var(--muted);
 }
 
+.how-work-intro {
+  color: var(--muted);
+  font-size: 1.08rem;
+  margin-bottom: 1.2rem;
+}
+
+.how-work-grid {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+.why-do {
+  background: #e8eef3;
+}
+
+.why-do-body {
+  background: #fff;
+  border: 1px solid var(--stroke);
+  border-radius: 0.75rem;
+  padding: 1.5rem;
+  margin-top: 1rem;
+}
+
+.why-do-body p {
+  color: var(--muted);
+  max-width: 75ch;
+}
+
 .about-grid {
   display: grid;
   grid-template-columns: 0.95fr 1.05fr;
@@ -545,6 +572,10 @@ textarea {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 
+  .how-work-grid {
+    grid-template-columns: 1fr;
+  }
+
   .meta-grid {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
@@ -563,6 +594,7 @@ textarea {
   .cards-grid,
   .portfolio-grid,
   .testimonials-grid,
+  .how-work-grid,
   .field-grid,
   .meta-grid {
     grid-template-columns: 1fr;
