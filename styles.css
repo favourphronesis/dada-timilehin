@@ -408,6 +408,64 @@ p {
   background: #f3f7fb;
 }
 
+.how-work-timeline {
+  position: relative;
+  margin-top: 1.6rem;
+  padding-left: 2.6rem;
+}
+
+.how-work-timeline::before {
+  content: "";
+  position: absolute;
+  left: 0.35rem;
+  top: 0.2rem;
+  bottom: 0.2rem;
+  width: 2px;
+  background: #c8d4e2;
+}
+
+.timeline-step {
+  position: relative;
+  padding: 0.2rem 0 2rem 0.9rem;
+  max-width: 70ch;
+}
+
+.timeline-step:last-child {
+  padding-bottom: 0;
+}
+
+.timeline-step::before {
+  content: "";
+  position: absolute;
+  left: -2.38rem;
+  top: 0.7rem;
+  width: 0.78rem;
+  height: 0.78rem;
+  border-radius: 50%;
+  background: var(--primary);
+  box-shadow: 0 0 0 4px #e5edf7;
+}
+
+.timeline-number {
+  display: block;
+  font-size: 1.5rem;
+  font-weight: 800;
+  color: var(--primary);
+  line-height: 1;
+  margin-bottom: 0.55rem;
+}
+
+.timeline-step h3 {
+  margin-bottom: 0.65rem;
+  font-size: 1.5rem;
+}
+
+.timeline-step p {
+  margin: 0;
+  color: var(--muted);
+  line-height: 1.7;
+}
+
 .why-do {
   background:
     radial-gradient(circle at 80% 20%, #e4e2ff 0%, transparent 45%),
@@ -730,6 +788,18 @@ textarea {
   .field-grid,
   .meta-grid {
     grid-template-columns: 1fr;
+  }
+
+  .how-work-timeline {
+    padding-left: 2.2rem;
+  }
+
+  .timeline-step {
+    padding-left: 0.65rem;
+  }
+
+  .timeline-step::before {
+    left: -2.05rem;
   }
 
   .hero {
