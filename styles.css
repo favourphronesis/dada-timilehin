@@ -332,10 +332,10 @@ p {
   background: #212d41;
   border: 1px solid #34445f;
   border-bottom: 1px solid #34445f;
-  padding: 1.65rem;
+  padding: 1.85rem;
   display: flex;
   flex-direction: column;
-  gap: 1rem;
+  gap: 1.1rem;
   height: 100%;
 }
 
@@ -345,16 +345,16 @@ p {
 
 .expertise-card h3 {
   color: #f3f7ff;
-  font-size: 1.4rem;
+  font-size: 1.5rem;
   margin-bottom: 0;
 }
 
 .expertise-card p {
   color: #d2dcee;
-  font-size: 0.97rem;
+  font-size: 1.05rem;
   line-height: 1.6;
   margin: 0;
-  min-height: 4.8rem;
+  min-height: 5.7rem;
 }
 
 .expertise-stat {
@@ -365,7 +365,7 @@ p {
 .expertise-stat strong {
   display: block;
   color: #7d86ff;
-  font-size: clamp(1.8rem, 2vw, 2.3rem);
+  font-size: clamp(2rem, 2.1vw, 2.45rem);
   line-height: 1.1;
   font-weight: 800;
   margin-bottom: 0.35rem;
@@ -374,8 +374,9 @@ p {
 .expertise-stat span {
   display: block;
   color: #bccae0;
-  font-size: 0.82rem;
+  font-size: 0.9rem;
   line-height: 1.5;
+  min-height: 2.7em;
 }
 
 .how-work-intro {
