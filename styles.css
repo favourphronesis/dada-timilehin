@@ -524,25 +524,83 @@ p {
 
 .project-card {
   overflow: hidden;
-}
-
-.project-card img {
-  height: 13.8rem;
-  width: 100%;
-  object-fit: cover;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  background: #f8fbff;
+  border: 1px solid #d7e1eb;
 }
 
 .project-body {
-  padding: 1rem 1rem 1.3rem;
+  padding: 1.1rem 1.1rem 1.3rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.65rem;
+  height: 100%;
 }
 
-.project-body p {
+.project-body h3 {
+  font-size: 1.7rem;
+  line-height: 1.1;
+  margin-bottom: 0.1rem;
+}
+
+.project-subtitle {
+  color: #26324a;
+  font-weight: 600;
+  margin: 0;
+}
+
+.project-challenge {
   color: var(--muted);
+  font-size: 0.92rem;
+  margin: 0;
+}
+
+.project-stats {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 0.7rem 0.8rem;
+  margin-top: 0.25rem;
+}
+
+.project-stat strong {
+  display: block;
+  font-size: 1.55rem;
+  line-height: 1;
+  color: var(--primary);
+  font-weight: 800;
+  margin-bottom: 0.2rem;
+}
+
+.project-stat span {
+  display: block;
+  font-size: 0.78rem;
+  color: #61708f;
+  line-height: 1.35;
+}
+
+.project-accent {
+  height: 0.48rem;
+  width: 100%;
+}
+
+.project-card-blue .project-accent {
+  background: linear-gradient(90deg, #193a91, #2d67e8);
+}
+
+.project-card-orange .project-accent {
+  background: linear-gradient(90deg, #cb6615, #f4a13f);
+}
+
+.project-card-green .project-accent {
+  background: linear-gradient(90deg, #177153, #43b282);
 }
 
 .project-body a {
   color: var(--teal);
   font-weight: 700;
+  margin-top: auto;
 }
 
 .project-body a:hover {
