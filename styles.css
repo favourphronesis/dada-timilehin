@@ -237,11 +237,6 @@ p {
   object-position: center 20%;
 }
 
-.hero-cutout {
-  mix-blend-mode: lighten;
-  filter: saturate(1.04) contrast(1.04);
-}
-
 .hero-badge {
   position: absolute;
   top: 1rem;
