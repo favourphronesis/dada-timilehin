@@ -232,6 +232,7 @@ p {
   height: 100%;
   object-fit: cover;
   object-position: center 12%;
+  filter: saturate(0.95);
 }
 
 .hero-badge {
@@ -256,7 +257,7 @@ p {
 
 .hero-badge span {
   display: block;
-  font-size: 0.72rem;
+  font-size: 0.78rem;
   line-height: 1.35;
   color: var(--muted);
 }
@@ -353,7 +354,7 @@ p {
 }
 
 .expertise-stat {
-  margin-top: 0.4rem;
+  margin-top: 0.9rem;
 }
 
 .expertise-stat strong {
