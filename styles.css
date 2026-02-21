@@ -779,6 +779,25 @@ textarea {
   font-size: 1.1rem;
 }
 
+.case-back {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.45rem;
+  font-weight: 700;
+  color: #2a3551;
+  margin-bottom: 1rem;
+  padding: 0.42rem 0.72rem;
+  border: 1px solid #bcc9da;
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.65);
+}
+
+.case-back:hover {
+  color: var(--primary);
+  border-color: #9db0c7;
+  background: rgba(255, 255, 255, 0.85);
+}
+
 .meta-grid {
   display: grid;
   grid-template-columns: repeat(4, minmax(0, 1fr));
