@@ -628,7 +628,7 @@ p {
 }
 
 .project-body a {
-  color: var(--text);
+  color: var(--teal);
   font-weight: 700;
   margin-top: auto;
   display: inline-flex;
