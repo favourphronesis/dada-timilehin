@@ -750,24 +750,6 @@ p {
   font-weight: 700;
 }
 
-.contact-linkedin {
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  color: var(--text);
-  line-height: 0;
-}
-
-.contact-linkedin:hover {
-  color: var(--primary);
-}
-
-.contact-linkedin svg {
-  width: 24px;
-  height: 24px;
-  fill: currentColor;
-}
-
 .contact-form label {
   display: block;
   font-weight: 600;
@@ -834,6 +816,18 @@ textarea {
 .footer-top nav a:hover,
 .socials a:hover {
   color: var(--primary);
+}
+
+.socials a {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+}
+
+.socials a svg {
+  width: 18px;
+  height: 18px;
+  fill: currentColor;
 }
 
 .footer-bottom {
