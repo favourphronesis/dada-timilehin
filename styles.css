@@ -753,15 +753,18 @@ p {
 .contact-linkedin {
   display: inline-flex;
   align-items: center;
-  gap: 0.35rem;
+  justify-content: center;
+  color: var(--text);
+  line-height: 0;
+}
+
+.contact-linkedin:hover {
   color: var(--primary);
-  font-size: 0.92rem;
-  font-weight: 600;
 }
 
 .contact-linkedin svg {
-  width: 0.95rem;
-  height: 0.95rem;
+  width: 24px;
+  height: 24px;
   fill: currentColor;
 }
 
