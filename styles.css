@@ -598,7 +598,7 @@ p {
   display: block;
   font-size: 1.32rem;
   line-height: 1;
-  color: var(--primary);
+  color: var(--text);
   font-weight: 800;
   margin-bottom: 0.25rem;
 }
@@ -628,7 +628,7 @@ p {
 }
 
 .project-body a {
-  color: var(--teal);
+  color: var(--primary);
   font-weight: 700;
   margin-top: auto;
   display: inline-flex;
@@ -636,7 +636,7 @@ p {
 }
 
 .project-body a:hover {
-  color: var(--primary);
+  color: #4d43e4;
 }
 
 .portfolio-nudge {
@@ -647,6 +647,17 @@ p {
 .portfolio-nudge p {
   color: var(--muted);
   margin-bottom: 0.95rem;
+}
+
+.btn-portfolio-outline {
+  background: transparent;
+  color: var(--primary);
+  border-color: var(--primary);
+}
+
+.btn-portfolio-outline:hover {
+  background: var(--primary);
+  color: #fff;
 }
 
 .testimonials {
