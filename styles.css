@@ -114,13 +114,13 @@ p {
 
 .btn-ghost {
   background: transparent;
-  color: var(--text);
-  border: 1px solid #b6c4d4;
+  color: var(--primary);
+  border: 1px solid var(--primary);
 }
 
 .btn-ghost:hover {
-  border-color: #8ea2b9;
-  background: rgba(255, 255, 255, 0.42);
+  border-color: var(--primary);
+  background: rgba(90, 77, 255, 0.08);
 }
 
 .btn-accent {
@@ -794,23 +794,27 @@ textarea {
 }
 
 .site-footer {
-  background: #e3ebef;
-  border-top: 1px solid #cad8e2;
+  background: #1a2332;
+  border-top: 1px solid #2f3e55;
   padding-top: 2.3rem;
+  color: #f3f7ff;
 }
 
 .footer-top {
-  display: flex;
+  display: grid;
+  grid-template-columns: 1fr auto auto;
   align-items: center;
-  justify-content: space-between;
-  gap: 1rem;
-  flex-wrap: wrap;
+  gap: 1.6rem;
+}
+
+.site-footer .brand-text {
+  color: #f3f7ff;
 }
 
 .footer-top nav {
   display: flex;
-  gap: 1.1rem;
-  flex-wrap: wrap;
+  gap: 1.4rem;
+  justify-self: center;
 }
 
 .footer-top nav a:hover,
@@ -821,20 +825,27 @@ textarea {
 .socials a {
   display: inline-flex;
   align-items: center;
-  gap: 0.35rem;
+  justify-content: center;
+  color: #f3f7ff;
+}
+
+.socials {
+  display: flex;
+  gap: 0.8rem;
+  justify-self: end;
 }
 
 .socials a svg {
-  width: 18px;
-  height: 18px;
+  width: 20px;
+  height: 20px;
   fill: currentColor;
 }
 
 .footer-bottom {
   margin-top: 1.3rem;
   padding: 1rem 0 2rem;
-  border-top: 1px solid #bfced9;
-  color: var(--muted);
+  border-top: 1px solid #2f3e55;
+  color: #b9c7dc;
 }
 
 .reveal,
@@ -1008,7 +1019,13 @@ textarea {
   }
 
   .footer-top {
-    flex-direction: column;
+    grid-template-columns: 1fr;
+    gap: 1rem;
     align-items: flex-start;
+  }
+
+  .footer-top nav,
+  .socials {
+    justify-self: start;
   }
 }
