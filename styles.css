@@ -137,8 +137,8 @@ p {
 
 .btn-outline-navy {
   background: transparent;
-  color: var(--text);
-  border-color: var(--text);
+  color: var(--primary);
+  border-color: var(--primary);
 }
 
 .site-header {
