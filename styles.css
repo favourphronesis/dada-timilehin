@@ -692,7 +692,7 @@ p {
 .contact {
   padding-top: 7.2rem;
   padding-bottom: 7.2rem;
-  background: #dfe8ed;
+  background: var(--bg);
 }
 
 .contact h2,
