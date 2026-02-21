@@ -126,6 +126,17 @@ p {
   color: #fff;
 }
 
+.btn-navy {
+  background: var(--text);
+  color: #fff;
+}
+
+.btn-outline-navy {
+  background: transparent;
+  color: var(--text);
+  border-color: var(--text);
+}
+
 .site-header {
   position: sticky;
   top: 0;
@@ -624,6 +635,16 @@ p {
   color: var(--primary);
 }
 
+.portfolio-nudge {
+  text-align: center;
+  padding: 2.3rem 0 0.2rem;
+}
+
+.portfolio-nudge p {
+  color: var(--muted);
+  margin-bottom: 0.95rem;
+}
+
 .testimonials {
   background: #dfe8ed;
 }
@@ -664,9 +685,22 @@ p {
   margin: 0 auto 2rem;
 }
 
+.contact {
+  padding-top: 7.2rem;
+  padding-bottom: 7.2rem;
+}
+
 .contact h2,
 .contact .eyebrow {
   text-align: center;
+}
+
+.contact-actions {
+  display: flex;
+  gap: 0.85rem;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
 }
 
 .contact-form label {
@@ -882,6 +916,10 @@ textarea {
   .field-grid,
   .meta-grid {
     grid-template-columns: 1fr;
+  }
+
+  .contact-actions {
+    flex-direction: column;
   }
 
   .how-work-timeline {
