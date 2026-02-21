@@ -1080,12 +1080,47 @@ textarea {
 
   .footer-top {
     grid-template-columns: 1fr;
-    gap: 1rem;
-    align-items: flex-start;
+    gap: 1.15rem;
+    align-items: center;
+    text-align: center;
+    padding-top: 0.4rem;
   }
 
   .footer-top nav,
   .socials {
-    justify-self: start;
+    justify-self: center;
+  }
+
+  .footer-top nav {
+    gap: 1.8rem;
+    font-size: 1.04rem;
+  }
+
+  .socials {
+    gap: 1rem;
+  }
+
+  .socials a {
+    width: 42px;
+    height: 42px;
+    border: 1px solid #3a4a63;
+    border-radius: 999px;
+  }
+
+  .socials a svg {
+    width: 20px;
+    height: 20px;
+  }
+
+  .footer-bottom {
+    margin-top: 1rem;
+    padding-top: 1rem;
+    padding-bottom: 1.6rem;
+    text-align: center;
+    font-size: 0.92rem;
+  }
+
+  .site-footer .brand {
+    justify-content: center;
   }
 }
