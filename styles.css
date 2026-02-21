@@ -628,7 +628,7 @@ p {
 }
 
 .project-body a {
-  color: var(--primary);
+  color: var(--text);
   font-weight: 700;
   margin-top: auto;
   display: inline-flex;
@@ -636,7 +636,7 @@ p {
 }
 
 .project-body a:hover {
-  color: #4d43e4;
+  color: var(--primary);
 }
 
 .portfolio-nudge {
@@ -656,8 +656,9 @@ p {
 }
 
 .btn-portfolio-outline:hover {
-  background: var(--primary);
-  color: #fff;
+  background: transparent;
+  color: var(--primary);
+  border-color: var(--primary);
 }
 
 .testimonials {
