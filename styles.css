@@ -101,8 +101,10 @@ p {
 }
 
 .hero-cta .btn-solid {
-  background: var(--text);
+  background: var(--primary);
   color: #fff;
+  border-radius: 999px;
+  padding: 0.9rem 1.55rem;
 }
 
 .btn-outline {
@@ -127,8 +129,10 @@ p {
 }
 
 .btn-navy {
-  background: var(--text);
+  background: var(--primary);
   color: #fff;
+  border-radius: 999px;
+  padding: 0.9rem 1.55rem;
 }
 
 .btn-outline-navy {
