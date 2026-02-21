@@ -662,10 +662,14 @@ p {
 }
 
 .testimonials {
-  background: #dfe8ed;
+  background: #1a2332;
   min-height: 34rem;
   padding-top: 7.2rem;
   padding-bottom: 7.2rem;
+}
+
+.testimonials h2 {
+  color: #f3f7ff;
 }
 
 .testimonials-grid {
@@ -673,26 +677,28 @@ p {
 }
 
 .quote-card {
-  border-color: #6dbbc0;
+  background: #212d41;
+  border-color: #34445f;
   padding: 1.3rem;
 }
 
 .quote-card p {
-  color: #2c3a5d;
+  color: #d5deee;
 }
 
 .quote-card h3 {
   margin: 1.2rem 0 0.2rem;
   font-size: 1.05rem;
+  color: #f3f7ff;
 }
 
 .quote-card span {
-  color: var(--muted);
+  color: #bccae0;
   font-size: 0.92rem;
 }
 
 .rating {
-  color: #0a7f83;
+  color: #7d86ff;
   letter-spacing: 0.15rem;
   font-size: 1.15rem;
 }
