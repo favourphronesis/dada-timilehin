@@ -663,6 +663,9 @@ p {
 
 .testimonials {
   background: #dfe8ed;
+  min-height: 34rem;
+  padding-top: 7.2rem;
+  padding-bottom: 7.2rem;
 }
 
 .testimonials-grid {
@@ -705,6 +708,7 @@ p {
   padding-top: 7.2rem;
   padding-bottom: 7.2rem;
   background: var(--bg);
+  min-height: 34rem;
 }
 
 .contact h2,
