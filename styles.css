@@ -506,6 +506,8 @@ p {
 
 .why-do-body h2 {
   margin-bottom: 1rem;
+  font-size: clamp(1.8rem, 3.2vw, 2.9rem);
+  line-height: 1.15;
 }
 
 .about-grid {
@@ -1076,6 +1078,11 @@ textarea {
     right: 0.3rem;
     top: 0.6rem;
     width: 9.6rem;
+  }
+
+  .why-do-body h2 {
+    font-size: clamp(1.6rem, 8.1vw, 2.15rem);
+    line-height: 1.2;
   }
 
   .footer-top {
