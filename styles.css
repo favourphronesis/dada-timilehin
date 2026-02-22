@@ -700,6 +700,18 @@ p {
   margin-top: 2.6rem;
 }
 
+.blog-all-posts {
+  border-color: var(--primary);
+  color: var(--primary);
+  background: transparent;
+}
+
+.blog-all-posts:hover {
+  background: rgba(90, 77, 255, 0.08);
+  border-color: var(--primary);
+  color: var(--primary);
+}
+
 .blog-card {
   background: #f8fbff;
   border: 1px solid #d7e1eb;
@@ -1178,6 +1190,11 @@ textarea {
   .portfolio-grid,
   .blog-grid {
     margin-top: 1.7rem;
+  }
+
+  .blog .section-head {
+    align-items: flex-start;
+    flex-direction: column;
   }
 
   .expertise-card {
