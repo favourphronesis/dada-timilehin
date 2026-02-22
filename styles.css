@@ -725,9 +725,25 @@ p {
 }
 
 .rating {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.45rem;
   color: #7d86ff;
-  letter-spacing: 0.15rem;
-  font-size: 1.15rem;
+  letter-spacing: 0;
+}
+
+.rating .rating-score {
+  color: #7d86ff;
+  font-size: 0.96rem;
+  font-weight: 800;
+  line-height: 1;
+}
+
+.rating .rating-stars {
+  color: #7d86ff;
+  letter-spacing: 0.14rem;
+  font-size: 1.08rem;
+  line-height: 1;
 }
 
 .contact-copy {
