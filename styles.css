@@ -737,45 +737,6 @@ p {
   line-height: 1;
 }
 
-.rating-partial {
-  display: inline-flex;
-  align-items: center;
-  gap: 0.06rem;
-}
-
-.rating-partial .rating-star {
-  color: #7d86ff;
-  font-size: 1.08rem;
-  line-height: 1;
-}
-
-.rating-partial .rating-star-partial {
-  position: relative;
-  width: 0.9em;
-  display: inline-block;
-  line-height: 1;
-}
-
-.rating-partial .rating-star-outline,
-.rating-partial .rating-star-fill {
-  display: block;
-  font-size: 1.08rem;
-  line-height: 1;
-}
-
-.rating-partial .rating-star-outline {
-  color: #5e6b83;
-}
-
-.rating-partial .rating-star-fill {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 50%;
-  overflow: hidden;
-  color: #7d86ff;
-}
-
 .contact-copy {
   text-align: center;
   color: var(--muted);
