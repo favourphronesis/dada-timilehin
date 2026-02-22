@@ -495,32 +495,38 @@ p {
   background: transparent;
   border: 0;
   border-radius: 0;
-  padding: 1.55rem;
+  padding: 1.1rem 0.4rem 1.1rem 1.1rem;
   margin-top: 0;
 }
 
 .why-do-body p {
   color: var(--muted);
-  max-width: 75ch;
+  max-width: 60ch;
+  font-size: 1.04rem;
+  line-height: 1.78;
+  margin-bottom: 1.15rem;
 }
 
 .why-do-body h2 {
-  margin-bottom: 1rem;
-  font-size: clamp(1.8rem, 3.2vw, 2.9rem);
-  line-height: 1.15;
+  margin-bottom: 1.2rem;
+  font-size: clamp(1.75rem, 2.75vw, 2.6rem);
+  line-height: 1.12;
+  max-width: 18ch;
 }
 
 .about-grid {
   display: grid;
   grid-template-columns: 0.95fr 1.05fr;
-  gap: 3rem;
-  align-items: center;
+  gap: 3.25rem;
+  align-items: start;
 }
 
 .about-photo img {
   border-radius: 0.9rem;
   border: 1px solid var(--stroke);
-  min-height: 28rem;
+  min-height: 31rem;
+  max-height: 42rem;
+  aspect-ratio: 4 / 5;
   object-fit: cover;
 }
 
@@ -1083,6 +1089,24 @@ textarea {
   .why-do-body h2 {
     font-size: clamp(1.6rem, 8.1vw, 2.15rem);
     line-height: 1.2;
+    max-width: none;
+  }
+
+  .why-do-body {
+    padding: 0;
+  }
+
+  .why-do-body p {
+    max-width: none;
+    font-size: 1rem;
+    line-height: 1.72;
+    margin-bottom: 1rem;
+  }
+
+  .about-photo img {
+    min-height: auto;
+    max-height: none;
+    aspect-ratio: 4 / 5;
   }
 
   .footer-top {
