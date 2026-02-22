@@ -688,6 +688,83 @@ p {
   border-color: var(--primary);
 }
 
+.blog {
+  background: #eef3f8;
+  padding-top: 6.6rem;
+  padding-bottom: 6.8rem;
+}
+
+.blog-grid {
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  align-items: stretch;
+  margin-top: 2.6rem;
+}
+
+.blog-card {
+  background: #f8fbff;
+  border: 1px solid #d7e1eb;
+  border-radius: 0.75rem;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.blog-thumb {
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  object-fit: cover;
+  border-bottom: 1px solid #d7e1eb;
+}
+
+.blog-card-body {
+  padding: 1rem 1rem 1.1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.72rem;
+  height: 100%;
+}
+
+.blog-meta {
+  color: #61708f;
+  font-size: 0.78rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  margin: 0;
+}
+
+.blog-title {
+  margin: 0;
+  font-size: 1.15rem;
+  line-height: 1.35;
+}
+
+.blog-excerpt {
+  margin: 0;
+  color: #4b5575;
+  font-size: 0.95rem;
+  line-height: 1.55;
+}
+
+.blog-link {
+  margin-top: auto;
+  color: var(--teal);
+  font-weight: 700;
+  display: inline-flex;
+  align-items: center;
+}
+
+.blog-link:hover {
+  color: var(--primary);
+}
+
+.blog-status {
+  margin: 0;
+  color: #4b5575;
+  font-weight: 600;
+}
+
 .testimonials {
   background: #1a2332;
   min-height: 34rem;
@@ -1048,7 +1125,8 @@ textarea {
 
   .testimonials,
   .contact,
-  .portfolio {
+  .portfolio,
+  .blog {
     min-height: auto;
     padding-top: 5.4rem;
     padding-bottom: 5.4rem;
@@ -1097,7 +1175,8 @@ textarea {
   }
 
   .expertise-grid,
-  .portfolio-grid {
+  .portfolio-grid,
+  .blog-grid {
     margin-top: 1.7rem;
   }
 
