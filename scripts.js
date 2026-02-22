@@ -80,17 +80,10 @@ function initBlogCarousel() {
     const maxScroll = blogGrid.scrollWidth - blogGrid.clientWidth;
     const noOverflow = maxScroll <= 4;
 
-    if (noOverflow) {
-      prevBtn.hidden = true;
-      nextBtn.hidden = true;
-      return;
-    }
-
     prevBtn.hidden = false;
     nextBtn.hidden = false;
-
-    prevBtn.disabled = blogGrid.scrollLeft <= 2;
-    nextBtn.disabled = blogGrid.scrollLeft >= maxScroll - 2;
+    prevBtn.disabled = noOverflow || blogGrid.scrollLeft <= 2;
+    nextBtn.disabled = noOverflow || blogGrid.scrollLeft >= maxScroll - 2;
   };
 
   prevBtn.onclick = () => {
