@@ -292,24 +292,6 @@ p {
   color: var(--muted);
 }
 
-.spark {
-  position: absolute;
-  width: 1.3rem;
-  height: 1.3rem;
-  border-radius: 0.25rem;
-  background: conic-gradient(from 40deg, #5a4dff, #7ddfd0, #5a4dff);
-}
-
-.spark-one {
-  top: 10%;
-  right: 8%;
-}
-
-.spark-two {
-  bottom: 12%;
-  left: -4%;
-}
-
 .cards-grid {
   display: grid;
   grid-template-columns: repeat(4, minmax(0, 1fr));
