@@ -53,7 +53,7 @@ function renderBlogPosts(posts) {
             <p class="blog-meta">${date}</p>
             <h3 class="blog-title">${title}</h3>
             <p class="blog-excerpt">${excerpt}</p>
-            <a class="blog-link" href="${link}" target="_blank" rel="noreferrer">Read on Medium &rarr;</a>
+            <a class="blog-link" href="${link}" target="_blank" rel="noreferrer">Read &rarr;</a>
           </div>
         </article>
       `;
@@ -88,7 +88,7 @@ async function loadBlogPosts() {
       <article class="blog-card">
         <div class="blog-card-body">
           <p class="blog-status">New posts from Medium will appear here automatically.</p>
-          <a class="blog-link" href="https://medium.com/@itantife" target="_blank" rel="noreferrer">Visit Medium &rarr;</a>
+          <a class="blog-link" href="https://medium.com/@itantife" target="_blank" rel="noreferrer">Read &rarr;</a>
         </div>
       </article>
     `;
