@@ -261,12 +261,16 @@
             See all posts &#8599;
           </a>
         </div>
-        <div class="cards-grid blog-grid" id="blog-grid" aria-live="polite">
-          <article class="blog-card">
-            <div class="blog-card-body">
-              <p class="blog-status">Loading recent posts...</p>
-            </div>
-          </article>
+        <div class="blog-carousel">
+          <button class="blog-nav blog-nav-prev" type="button" aria-label="See older posts" data-blog-nav="prev">&#8592;</button>
+          <div class="cards-grid blog-grid" id="blog-grid" aria-live="polite">
+            <article class="blog-card">
+              <div class="blog-card-body">
+                <p class="blog-status">Loading recent posts...</p>
+              </div>
+            </article>
+          </div>
+          <button class="blog-nav blog-nav-next" type="button" aria-label="See newer posts" data-blog-nav="next">&#8594;</button>
         </div>
       </div>
     </section>

@@ -695,9 +695,60 @@ p {
 }
 
 .blog-grid {
-  grid-template-columns: repeat(3, minmax(0, 1fr));
+  display: flex;
   align-items: stretch;
+  gap: 1.2rem;
   margin-top: 2.6rem;
+  overflow-x: auto;
+  scroll-behavior: smooth;
+  scrollbar-width: none;
+  scroll-snap-type: x proximity;
+}
+
+.blog-grid::-webkit-scrollbar {
+  display: none;
+}
+
+.blog-carousel {
+  position: relative;
+}
+
+.blog-nav {
+  position: absolute;
+  top: calc(50% + 1.3rem);
+  transform: translateY(-50%);
+  width: 2.5rem;
+  height: 2.5rem;
+  border: 1px solid #c5d2e2;
+  border-radius: 999px;
+  background: #ffffff;
+  color: #2f3b58;
+  font-size: 1.15rem;
+  font-weight: 700;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  box-shadow: 0 6px 18px rgba(38, 52, 86, 0.12);
+  z-index: 2;
+}
+
+.blog-nav:hover:not(:disabled) {
+  color: var(--primary);
+  border-color: #9db1cc;
+}
+
+.blog-nav:disabled {
+  opacity: 0.35;
+  cursor: not-allowed;
+}
+
+.blog-nav-prev {
+  left: -1.15rem;
+}
+
+.blog-nav-next {
+  right: -1.15rem;
 }
 
 .blog-all-posts {
@@ -724,6 +775,8 @@ p {
   display: flex;
   flex-direction: column;
   height: 100%;
+  min-width: calc((100% - 2.4rem) / 3);
+  scroll-snap-align: start;
 }
 
 .blog-thumb {
@@ -1199,6 +1252,14 @@ textarea {
   .blog .section-head {
     align-items: flex-start;
     flex-direction: column;
+  }
+
+  .blog-nav {
+    display: none;
+  }
+
+  .blog-card {
+    min-width: 82%;
   }
 
   .expertise-card {

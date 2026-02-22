@@ -1,5 +1,5 @@
 const FEED_URL = "https://medium.com/feed/@itantife";
-const MAX_POSTS = 6;
+const MAX_POSTS = 12;
 const CACHE_SECONDS = 1800;
 
 export async function onRequestGet(context) {
