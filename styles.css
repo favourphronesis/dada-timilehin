@@ -701,15 +701,19 @@ p {
 }
 
 .blog-all-posts {
-  border-color: var(--primary);
-  color: var(--primary);
-  background: transparent;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.3rem;
+  color: var(--text);
+  font-weight: 700;
+  padding-bottom: 0.42rem;
+  border-bottom: 2px solid var(--primary);
+  line-height: 1;
 }
 
 .blog-all-posts:hover {
-  background: rgba(90, 77, 255, 0.08);
-  border-color: var(--primary);
-  color: var(--primary);
+  color: var(--teal);
+  border-bottom-color: var(--teal);
 }
 
 .blog-card {
